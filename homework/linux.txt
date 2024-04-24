@@ -30,7 +30,6 @@ joci@joci-EP43T-UD3L:~/Dokumentumok/ZadanieDomowe$ cat selected.txt commands.txt
   679  mv copy.txt backup/copy.txt
   680  mkdir backup
   682  mv copy.txt backup/copy.txt
-  691  grep -c "" processes.txt 
   692  grep -c "" processes.txt > selected.txt
   694  grep -rni "/bin" processes.txt
   695  grep -rni "/bin" processes.txt >> selected.txt 
