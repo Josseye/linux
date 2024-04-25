@@ -1,35 +1,37 @@
-joci@joci-EP43T-UD3L:~/Dokumentumok/ZadanieDomowe$ cat selected.txt commands.txt 
-244
-90:root         694  0.0  0.1  46548 11484 ?        Ss   ápr22   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-100:root         777  0.0  0.1 123576 14632 ?        Ssl  ápr22   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-113:joci        1333  0.0  0.0  44992  5100 ?        Ssl  ápr22   0:00 /usr/bin/pipewire
-114:joci        1334  0.0  0.0  28880  4628 ?        Ssl  ápr22   0:00 /usr/bin/pipewire-media-session
-115:joci        1335  0.5  0.2 2890364 23432 ?       Ssl  ápr22  14:35 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-116:joci        1337  0.0  0.1 1153720 9272 ?        Ssl  ápr22   0:00 /usr/bin/ubuntu-report service
-117:joci        1352  0.0  0.0  10752  6684 ?        Ss   ápr22   0:07 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-121:joci        1376  0.0  0.0 246676  7208 ?        SLl  ápr22   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-122:joci        1391  0.0  0.0 167992  5960 tty2     Ssl+ ápr22   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
-129:joci        1513  0.0  0.0   8564  4308 ?        S    ápr22   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
-130:joci        1517  0.8  2.7 4548772 225696 ?      Ssl  ápr22  25:12 /usr/bin/gnome-shell
-143:joci        1604  0.0  0.0  38952  7640 ?        Ss   ápr22   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
-145:joci        1668  0.0  0.1 429160 14432 ?        Sl   ápr22   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
-147:joci        1707  0.0  0.2 2666540 21540 ?       Sl   ápr22   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-149:joci        1720  0.0  0.0   2892  1612 ?        Ss   ápr22   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
-152:joci        1726  0.0  0.1 394512  9584 ?        Sl   ápr22   0:35 /usr/bin/ibus-daemon --panel disable
-172:joci        1905  0.0  0.4 783932 38312 ?        Sl   ápr22   0:07 /snap/snap-store/1113/usr/bin/snap-store --gapplication-service
-174:joci        1923  0.0  0.2 2674856 19688 ?       Sl   ápr22   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
-178:joci        3080  0.0  0.1 1385760 10088 ?       Sl   ápr22   0:02 /usr/bin/snap userd
-180:joci        3774  0.0  0.0 123356  7536 ?        Ssl  ápr22   0:04 /usr/bin/speech-dispatcher -s -t 0
-233:joci       54510  2.1  1.2 962488 98912 ?        Sl   14:27   0:05 /usr/bin/nautilus --gapplication-service
-234:joci       54545  0.0  0.2  41328 19456 ?        S    14:27   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
-235:joci       54548  0.0  0.3 389316 27908 ?        Sl   14:27   0:00 /usr/bin/gnome-terminal.real --wait
-  668  mkdir ZadanieDomowe
-  672  touch processes.txt
-  674  ps aux > processes.txt
-  677  cp processes.txt copy.txt
-  679  mv copy.txt backup/copy.txt
-  680  mkdir backup
-  682  mv copy.txt backup/copy.txt
-  692  grep -c "" processes.txt > selected.txt
-  694  grep -rni "/bin" processes.txt
-  695  grep -rni "/bin" processes.txt >> selected.txt 
+251
+90:root         694  0.0  0.1  46548 10924 ?        Ss   ápr22   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+100:root         777  0.0  0.1 123576 13476 ?        Ssl  ápr22   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+113:joci        1333  0.0  0.0  44992  5064 ?        Ssl  ápr22   0:00 /usr/bin/pipewire
+114:joci        1334  0.0  0.0  28880  4612 ?        Ssl  ápr22   0:00 /usr/bin/pipewire-media-session
+115:joci        1335  0.4  0.2 3152892 23348 ?       Ssl  ápr22  17:43 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+116:joci        1337  0.0  0.0 1153720 5284 ?        Ssl  ápr22   0:00 /usr/bin/ubuntu-report service
+117:joci        1352  0.0  0.0  10752  6516 ?        Ss   ápr22   0:10 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+121:joci        1376  0.0  0.0 246676  7016 ?        SLl  ápr22   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+122:joci        1391  0.0  0.0 167992  5836 tty2     Ssl+ ápr22   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+129:joci        1513  0.0  0.0   8564  4280 ?        S    ápr22   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+130:joci        1517  0.9  3.2 5083072 265340 ?      Ssl  ápr22  38:18 /usr/bin/gnome-shell
+143:joci        1604  0.0  0.0  38952  7556 ?        Ss   ápr22   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
+145:joci        1668  0.0  0.1 429160 10556 ?        Sl   ápr22   0:00 /snap/snapd-desktop-integration/157/usr/bin/snapd-desktop-integration
+147:joci        1707  0.0  0.2 2666540 19012 ?       Sl   ápr22   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+149:joci        1720  0.0  0.0   2892  1608 ?        Ss   ápr22   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+152:joci        1726  0.0  0.1 394512  9524 ?        Sl   ápr22   0:56 /usr/bin/ibus-daemon --panel disable
+172:joci        1905  0.0  1.4 802072 117712 ?       Sl   ápr22   0:11 /snap/snap-store/1113/usr/bin/snap-store --gapplication-service
+174:joci        1923  0.0  0.2 2674856 18780 ?       Sl   ápr22   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+178:joci        3080  0.0  0.1 1385760 10068 ?       Sl   ápr22   0:02 /usr/bin/snap userd
+180:joci        3774  0.0  0.0 123356  7364 ?        Ssl  ápr22   0:05 /usr/bin/speech-dispatcher -s -t 0
+215:joci       74089  0.0  0.5 400080 41584 ?        SLl  10:26   0:00 /usr/bin/seahorse --gapplication-service
+216:joci       74093  0.0  0.7 1230656 62376 ?       Sl   10:26   0:00 /usr/bin/gnome-calendar --gapplication-service
+220:joci       74243  0.0  0.9 366456 80368 ?        Sl   10:26   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.SXRPM2 -listen 4 -listen 5 -displayfd 6 -initfd 7
+234:joci       74822  0.0  0.2  41328 19456 ?        S    10:36   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+235:joci       74825  0.0  0.3 389404 28036 ?        Sl   10:36   0:00 /usr/bin/gnome-terminal.real --wait
+239:joci       74924  1.5  0.9 656576 80132 ?        Sl   10:37   0:04 /usr/bin/gedit --gapplication-service
+  801  mkdir ZadanieDomowe
+  802  cd ZadanieDomowe
+  803  touch processes.txt
+  804  ps aux > processes.txt
+  805  cp processes.txt copy.txt
+  806  mkdir backup
+  807  mv copy.txt backup/copy.txt
+  808  grep -c "" processes.txt > selected.txt
+  809  grep -rni "/bin" processes.txt >> selected.txt
+  810  history | tail +801 > commands.txt
