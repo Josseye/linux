@@ -1,3 +1,4 @@
+joci@joci-EP43T-UD3L:~/ZadanieDomowe$ cat selected.txt commands.txt
 251
 90:root         694  0.0  0.1  46548 10924 ?        Ss   ápr22   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 100:root         777  0.0  0.1 123576 13476 ?        Ssl  ápr22   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
